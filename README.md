@@ -1,4 +1,4 @@
-# Crime_Analysis_inIndia
+
 # Crime Against Women in India (NCRB 2022 Analysis)  
 **Objective**: Identify high-risk states and crime trends using Python.  
 
