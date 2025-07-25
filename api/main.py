@@ -1,17 +1,13 @@
 
-import os
+
 import pandas as pd
 from fastapi import FastAPI
 
 app = FastAPI()
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # path to api/
-DATA_DIR = os.path.join(BASE_DIR, "..", "Data")        
-
-df_women = pd.read_csv(os.path.join(DATA_DIR, "df_women.csv"))
-df1 = pd.read_csv(os.path.join(DATA_DIR, "df1.csv"))
-df2 = pd.read_csv(os.path.join(DATA_DIR, "df2.csv"))
-
+df_women = pd.read_csv("data/df_women.csv")
+df1 = pd.read_csv("data/df1.csv")
+df2 = pd.read_csv("data/df2.csv")
 
 @app.get("/")
 def root():
