@@ -1,9 +1,11 @@
 #About the Project
+
 This project provides a RESTful API service that offers detailed crime analysis data for Indian states, with a special focus on crimes against women. The API exposes multiple endpoints to retrieve state-wise statistics about various crime categories, gender-wise victim data, and yearly crime trends from authentic and processed datasets.
 
 The aim is to empower developers, researchers, and policymakers by making crime data easily accessible and machine-readable, supporting data-driven decisions, research, and visualization in web or mobile apps.
 
 ##Features
+
 State-wise Crime Data: Detailed crime statistics related to different categories of crimes against women.
 
 Gender-wise Victim Data: Breakdowns of crime victims by gender and age.
@@ -17,6 +19,7 @@ JSON Response: Well-structured JSON output for all queries.
 Case-insensitive Queries: State names can be queried regardless of letter case.
 
 ##How It Works
+
 The API loads pre-processed CSV datasets on startup (df_women.csv, df1.csv, and df2.csv).
 
 When a client sends a GET request to an endpoint with a state name, the API:
