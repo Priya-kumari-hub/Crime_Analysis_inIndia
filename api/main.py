@@ -3,10 +3,10 @@ import pandas as pd
 
 app = FastAPI()
 
-# Load datasets
-df_women = pd.read_csv("df_women.csv")
-df1 = pd.read_csv("df1.csv")
-df2 = pd.read_csv("df2.csv")
+df_women = pd.read_csv("../df_women.csv")
+df1 = pd.read_csv("../df1.csv")
+df2 = pd.read_csv("../df2.csv")
+
 
 @app.get("/")
 def root():
