@@ -5,9 +5,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-df_women = pd.read_csv("data/df_women.csv")
-df1 = pd.read_csv("data/df1.csv")
-df2 = pd.read_csv("data/df2.csv")
+df_women = pd.read_csv("Data/df_women.csv")
+df1 = pd.read_csv("Data/df1.csv")
+df2 = pd.read_csv("Data/df2.csv")
 
 @app.get("/")
 def root():
